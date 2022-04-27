@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="container" id="feedback">
+    <div class="box-container">
+      <div class="img-container">
+        <img src="images/icon-star.svg" alt="Star" class="star-icon">
+      </div>
+      <div class="text-container">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="button-container">
+        <button id="1" class="btn-rating" aria-selected="false" role="button">1</button>
+        <button id="2" class="btn-rating" aria-selected="false" role="button">2</button>
+        <button id="3" class="btn-rating" aria-selected="false" role="button">3</button>
+        <button id="4" class="btn-rating" aria-selected="false" role="button">4</button>
+        <button id="5" class="btn-rating" aria-selected="false" role="button">5</button>
+      </div>
+      <button class="btn-submit">Submit</button>
+    </div>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div hidden class="container" id="thankyou">
+    <div class="box-container box-container-thanks">
+      <div class="img-container img-container-thanks">
+        <img class="img-thanks" src="images/illustration-thank-you.svg" alt="Thank You!">
+      </div>
+      <div class="result">
+        <p>You selected <span class="result-star">4</span> out of 5</p>
+      </div>
+      <div class="text-container text-container-thanks">
+        <h2>Thank You !</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Thank you state end -->
+  <script src="./script.js"></script>
+</body>
+</html>
